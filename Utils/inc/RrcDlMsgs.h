@@ -1,9 +1,12 @@
 #pragma once
 #include <memory>
+#include "CommonMsgsData.h"
 
 enum class RrcDlMsgType
 {
-  rrcConnectionSetup
+  rrcConnectionSetup,
+  ueCapabilityEnquiry,
+  rrcConnectionReconfiguration
 };
 
 struct RrcDlMsg
